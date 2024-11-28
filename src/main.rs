@@ -11,7 +11,7 @@ use uuid::Uuid;
 
 #[tokio::main]
 async fn main() {
-    let table: MyDatabase<CardInfo> = MyDatabase::new("card-info".to_string());
+    let table: MyDatabase<CardInfo> = MyDatabase::new("card-info".to_string(),"/home/jorge/Documents/repositories/rust/inventory/src/firebase_config.json".to_string());
     let new_record = CardInfo {
         client_name: "John Doe".to_string(),
         configuration: vec![Configuration {

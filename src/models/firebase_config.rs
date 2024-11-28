@@ -1,5 +1,6 @@
 
-#[derive(Debug)]
+// FirebaseConfig model
+#[derive(serde::Deserialize, Debug)]
 pub struct FirebaseConfig {
        pub api_key: String,
        pub  auth_domain: String,
